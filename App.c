@@ -96,7 +96,9 @@ void imprimir(struct Produto NewProduto[quantidadeVetor]){
 }
 
 void calcular(struct Produto NewProduto[quantidadeVetor]){
-    int opcaoinsert;
+    
+    ValorTotal = 0; // setar variável caso faça um produto por vez!
+    int opcaoinsert;    
       
     if( quantidadeProduto == 0){
         printf("Não existe produtos para calcular preço");
